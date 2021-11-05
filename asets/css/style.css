@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+:root {
+  /* primary */
+  --softred: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate: hsl(168, 34%, 41%);
+  /* Neutral */
+  --dark-desaturated-blue: hsl(212, 27%, 19%);
+  --dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+}
+body {
+  overflow-x: hidden;
+}
+.softred {
+  color: var(--softred);
+}
+.yellow {
+  color: var(--yellow);
+}
+.dark-desaturated {
+  color: var(--dark-desaturated);
+}
+.dark-blue {
+  color: var(--dark-blue);
+}
+.dark-moderate {
+  background-color: var(--dark-moderate);
+}
+.dark-desaturated-blue {
+  color: var(--dark-desaturated-blue);
+}
+.dark-grayish-blue {
+  color: var(--dark-grayish-blue);
+}
+.Dark-grayish-blue {
+  color: var(--Dark-grayish-blue);
+}
+.Grayish-blue {
+  color: var(--Grayish-blue);
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+}
+.barlow {
+  font-family: "Barlow", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 18px;
+  font-family: "Barlow";
+}
+header {
+  background-image: url(../images/image-header.jpg);
+  min-height: 510px;
+  background-position: center;
+}
+h1 {
+  letter-spacing: 10px;
+  font-family: "Fraunces", serif;
+}
+.main-first {
+  background-image: url(../images/image-transform.jpg);
+}
+.learn-more {
+  letter-spacing: 3px;
+  position: relative;
+}
+.learn-more::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105%;
+  height: 5px;
+  background-color: var(--yellow);
+  bottom: -2px;
+  border-radius: 2px;
+}
+.main-second {
+  background-image: url(../images/image-stand-out.jpg);
+}
+.more-2::after {
+  background-color: var(--softred);
+}
+.main-third {
+  background-image: url(../images/image-graphic-design.jpg);
+  background-position: center;
+}
+.main-4th {
+  background-image: url(../images/image-photography.jpg);
+  background-position: center;
+}
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+}
+#review h2 {
+  letter-spacing: 3px;
+}
+img {
+  width: 100%;
+}
+.icons img {
+  width: 30px;
+  margin: 0 20px;
+}
+@media screen and (max-width: 768px) {
+  .main-first,
+  .main-second {
+    min-height: 300px;
+  }
+  .main-third,
+  .main-4th {
+    min-height: 580px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .m-contain {
+    min-height: 600px;
+    max-height: 800px;
+  }
+}
