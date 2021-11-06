@@ -17,10 +17,10 @@ body {
   overflow-x: hidden;
 }
 .softred {
-  color: var(--softred);
+  background-color: var(--softred);
 }
 .yellow {
-  color: var(--yellow);
+  background-color: var(--yellow);
 }
 .dark-desaturated {
   color: var(--dark-desaturated);
@@ -130,4 +130,17 @@ img {
     min-height: 600px;
     max-height: 800px;
   }
+}
+.menu {
+  right: 50%;
+  transform: translateX(50%);
+  top: 4rem;
+}
+.menu::before {
+  content: '';
+  border-right: 20px solid white;
+  border-top: 40px solid transparent;
+  position: absolute;
+  top: -1rem;
+  right: 0;
 }
